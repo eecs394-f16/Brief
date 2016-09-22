@@ -1,3 +1,4 @@
 # NUWeather
 Team Members:
-Sonia Nigam
+Sonia Nigami
+Daniel Nussbaum
