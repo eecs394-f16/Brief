@@ -6,61 +6,84 @@
         </super-navbar-title>
     </super-navbar>
 
-    <div class="card">
-        <div class="item item-divider header--purple">
-           Weather
-         </div>
-        <div class="item item-text-wrap">
-            This is a basic Card which contains an item that has wrapping text.
-        </div>
-    </div>
+	<div class="card">
+		
+		<a ng-controller="SportsController">
+			<div class="item item-divider header--purple">
+				Weather
+				
+			</div>
+			<div class="item item-text-wrap">
+				<img src= "../data/nebraska.png" alt="" style="width:100%; height:100%">
+				Temperature: 67 degrees
+			</div>
+		</a>
+	</div>
 
-    <div class="list card">
-        <div class="item item-divider header--purple">
-           News
-         </div>
-           <a href="#" class="item item-text-wrap">
-                Football: Nebraska drops Wildcats in Big Ten opener
-           </a>
+	<div class="list card">
+		<a ng-controller="NewsController">
+			<div class="item item-divider header--purple">
+				News
+			</div>
+			<div class="item item-avatar">
+			   
+				<img src="../data/nebraska.png">
+				<a href="#" class="item item-text-wrap">
+			   
+					<h2>Football: Nebraska drops Wildcats in Big Ten opener</h2>
+				</a>
+			</div>
+		 
+			<a href="#" class="item item-text-wrap">
+				Football: Nebraska drops Wildcats in Big Ten opener
+			</a>
 
-           <a href="#" class="item item-text-wrap">
-            Committee plans town hall meetings to hear student views on residential life
-           </a>
+			<a href="#" class="item item-text-wrap">
+				Committee plans town hall meetings to hear student views on residential life
+			</a>
 
-           <a href="#" class="item item-text-wrap">
-               Student groups will not leave Norris before fall 2018, admin says
-           </a>
+			<a href="#" class="item item-text-wrap">
+				Student groups will not leave Norris before fall 2018, admin says
+			</a>
 
-           <a href="#" class="item item-text-wrap">
-               Black Student Experience task force members hope report will result in actual change
-           </a>
-    </div>
+			<a href="#" class="item item-text-wrap">
+				Black Student Experience task force members hope report will result in actual change
+			</a>
+		</a>
+	</div>
 
-    <div class="card">
-        <div class="item item-divider header--purple">
-           Sports
-         </div>
-        <div class="item item-text-wrap">
-            This is a basic Card which contains an item that has wrapping text.
-        </div>
-    </div>
+	<div class="card">
+		<a ng-controller="SportsController">
+			<div class="item item-divider header--purple">
+				Sports
+			</div>
+			<div class="item item-text-wrap">
+				This is a basic Card which contains an item that has wrapping text.
+			</div>
+		</a>
+	</div>
 
-    <div class="card">
-        <div class="item item-divider header--purple">
-           Food and Dining
-         </div>
-        <div class="item item-text-wrap">
-            This is a basic Card which contains an item that has wrapping text.
-        </div>
-    </div>
+	<div class="card">
+		<a ng-controller="SportsController">
+		
+			<div class="item item-divider header--purple">
+				Food and Dining
+			</div>
+			<div class="item item-text-wrap">
+				This is a basic Card which contains an item that has wrapping text.
+			</div>
+		</a>
+	</div>
 
-    <div class="card">
-        <div class="item item-divider header--purple">
-           Upcoming
-         </div>
-        <div class="item item-text-wrap">
-            This is a basic Card which contains an item that has wrapping text.
-        </div>
-    </div>
+	<div class="card">
+		<a ng-controller="UpcomingController">
+			<div class="item item-divider header--purple">
+				Upcoming
+			</div>
+			<div class="item item-text-wrap">
+				This is a basic Card which contains an item that has wrapping text.
+			</div>
+		</a>
+	</div>
 
 </div>
