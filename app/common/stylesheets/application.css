@@ -11,15 +11,11 @@
     padding: 15px;
 }
 
-.weather-card {
-    background-color: #401B6A !important;
-    color: #fff;
-}
-
-.weather-item {
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+.bg {
+    background-image: url(http://www.saidaonline.com/en/newsgfx/mostly%20sunny-saidaonline.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .news-item {
