@@ -1,3 +1,3 @@
-angular.module('brief').controller('WeatherController', ['$scope', function($scope) {
+angular.module('brief').controller('UpcomingController', ['$scope', function($scope) {
 
 }]);
