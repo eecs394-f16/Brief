@@ -12,10 +12,10 @@
         </div>
         <div class="item item-text-wrap" style="background-image: url(http://www.saidaonline.com/en/newsgfx/mostly%20sunny-saidaonline.jpg); background-size: cover;
 background-repeat: no-repeat; background-position: center;">
-            <h1 align="center">67&deg;</h2>
-                <h2 align="center">High:72&deg;</h2>
-                <h2 align="center">Low: 59&deg;</h2>
-                <h2 align="center">Humidity: 52%</h2>
+            <h1 align="center">{{ weather.temp }}&deg;</h2>
+                <h2 align="center">High: {{ weather.high }}&deg;</h2>
+                <h2 align="center">Low: {{ weather.low }}&deg;</h2>
+                <h2 align="center">Humidity: {{ weather.humidity }}</h2>
         </div>
     </div>
 
@@ -67,15 +67,6 @@ background-repeat: no-repeat; background-position: center;">
                 <h2>Field Hockey: Wildcats pull off pair of top-10 upsets</h2>
             </div>
 		</div>
-    </div>
-
-    <div class="card" ng-controller="FoodController">
-        <div class="item item-divider header--purple">
-            Food and Dining
-        </div>
-        <div class="item item-text-wrap">
-            This is a basic Card which contains an item that has wrapping text.
-        </div>
     </div>
 
     <div class="card" ng-controller="UpcomingController">
