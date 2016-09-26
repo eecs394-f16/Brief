@@ -16,6 +16,12 @@
     color: #fff;
 }
 
+.weather-item {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
 .news-item {
     width: 100%;
     white-space: nowrap;
