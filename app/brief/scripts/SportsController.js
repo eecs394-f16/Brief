@@ -1,3 +1,3 @@
-angular.module('brief').controller('NewsController', ['$scope', function($scope) {
+angular.module('brief').controller('SportsController', ['$scope', function($scope) {
     
 }]);
