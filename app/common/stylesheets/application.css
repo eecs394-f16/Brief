@@ -16,12 +16,11 @@
     color: #fff;
 }
 
-.weather-item{
-
+.weather-item {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-
+   opacity: .5;
 }
 
 .news-item {
