@@ -23,28 +23,10 @@
             News
         </div>
 
-        <a class="item item-thumbnail-left item-text-wrap"
-           href="http://dailynorthwestern.com/2016/09/25/sports/football-nebraska-drops-wildcats-in-big-ten-opener/">
-            <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/unnamed-4-900x601.jpg">
-                <h2>Football: Nebraska drops Wildcats in Big Ten opener</h2>
-        </a>
-
-        <a class="item item-thumbnail-left item-text-wrap"
-           href="http://dailynorthwestern.com/2016/09/23/campus/committee-plans-town-hall-meetings-to-hear-student-views-on-residential-life/">
-            <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/RESIDENCE_SHERRYLI_WEB-900x600.jpg">
-                <h2>Committee plans town hall meetings to hear student views on residential life</h2>
-        </a>
-
-        <a class="item item-thumbnail-left item-text-wrap"
-           href="http://dailynorthwestern.com/2016/09/22/campus/student-groups-will-not-leave-norris-before-fall-2018-admin-says/">
-            <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/NORRIS_JEFFREYWANG_WEB-900x600.jpg">
-                <h2>Student groups will not leave Norris before fall 2018, admin says</h2>
-        </a>
-
-        <a class="item item-thumbnail-left item-text-wrap"
-           href="http://dailynorthwestern.com/2016/09/22/campus/black-student-experience-task-force-members-hope-report-will-result-in-actual-change/">
-            <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/7-WEB-900x600.jpg">
-                <h2>Black Student Experience task force members hope report will result in actual change</h2>
+        <a ng-repeat="article in news" class="item item-thumbnail-left item-text-wrap"
+           ng-href="{{article.data.link}}">
+            <img ng-src="{{article.data.img}}">
+                <h2>{{article.data.name}}</h2>
         </a>
     </div>
 
