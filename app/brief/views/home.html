@@ -6,91 +6,82 @@
         </super-navbar-title>
     </super-navbar>
 
-	<div class="card">
-		
-		<a ng-controller="SportsController">
-			<div class="item item-divider header--purple">
-				Weather
-			</div>
-			<div class="item item-text-wrap" style="background-image: url(http://www.saidaonline.com/en/newsgfx/mostly%20sunny-saidaonline.jpg); background-size: cover;
- background-repeat: no-repeat; background-position: center;">
-				<h1 align="center">67&deg;</h2> 
-				<h2 align="center">High:72&deg;</h2>
-				<h2 align="center">Low: 59&deg;</h2>
-				<h2 align="center">Humidity: 52%</h2>	
-			</div>
-		</a>
-	</div>
+    <div class="card" ng-controller="WeatherController">
+        <div class="item item-divider header--purple">
+            Weather
+        </div>
+        <div class="item item-text-wrap" style="background-image: url(http://www.saidaonline.com/en/newsgfx/mostly%20sunny-saidaonline.jpg); background-size: cover;
+background-repeat: no-repeat; background-position: center;">
+            <h1 align="center">67&deg;</h2>
+                <h2 align="center">High:72&deg;</h2>
+                <h2 align="center">Low: 59&deg;</h2>
+                <h2 align="center">Humidity: 52%</h2>
+        </div>
+    </div>
 
-	<div class="list card">
-		<a ng-controller="NewsController">
-			<div class="item item-divider header--purple">
-				News
-			</div>
-			
-		    <a class="item item-thumbnail-left" id="article" href="http://dailynorthwestern.com/2016/09/25/sports/football-nebraska-drops-wildcats-in-big-ten-opener/">
-		         <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/unnamed-4-900x601.jpg">
-				 	<div class="item item-text-wrap">
-		         		<h2>Football: Nebraska drops Wildcats in Big Ten opener</h2>
-					</div>
-		       </a>
-			   
-		    <a class="item item-thumbnail-left" id="article" href="http://dailynorthwestern.com/2016/09/23/campus/committee-plans-town-hall-meetings-to-hear-student-views-on-residential-life/">
-		         <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/RESIDENCE_SHERRYLI_WEB-900x600.jpg">
-				 	<div class="item item-text-wrap">
-		         		<h2>Committee plans town hall meetings to hear student views on residential life</h2>
-					</div>
-		       </a>
-			   
-		    <a class="item item-thumbnail-left" id="article" href="http://dailynorthwestern.com/2016/09/22/campus/student-groups-will-not-leave-norris-before-fall-2018-admin-says/">
-		         <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/NORRIS_JEFFREYWANG_WEB-900x600.jpg">
-				 	<div class="item item-text-wrap">
-		         		<h2>Student groups will not leave Norris before fall 2018, admin says</h2>
-					</div>
-		       </a>
-			   
-		    <a class="item item-thumbnail-left" id="article" href="http://dailynorthwestern.com/2016/09/22/campus/black-student-experience-task-force-members-hope-report-will-result-in-actual-change/">
-		         <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/7-WEB-900x600.jpg">
-				 	<div class="item item-text-wrap">
-		         		<h2>Black Student Experience task force members hope report will result in actual change</h2>
-					</div>
-		       </a>
+    <div class="list card" ng-controller="NewsController">
+        <div class="item item-divider header--purple">
+            News
+        </div>
 
-		</a>
-	</div>
+        <a class="item item-thumbnail-left" id="article"
+           href="http://dailynorthwestern.com/2016/09/25/sports/football-nebraska-drops-wildcats-in-big-ten-opener/">
+            <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/unnamed-4-900x601.jpg">
+            <div class="item item-text-wrap">
+                <h2>Football: Nebraska drops Wildcats in Big Ten opener</h2>
+            </div>
+        </a>
 
-	<div class="card">
-		<a ng-controller="SportsController">
-			<div class="item item-divider header--purple">
-				Sports
-			</div>
-			<div class="item item-text-wrap">
-				This is a basic Card which contains an item that has wrapping text.
-			</div>
-		</a>
-	</div>
+        <a class="item item-thumbnail-left" id="article"
+           href="http://dailynorthwestern.com/2016/09/23/campus/committee-plans-town-hall-meetings-to-hear-student-views-on-residential-life/">
+            <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/RESIDENCE_SHERRYLI_WEB-900x600.jpg">
+            <div class="item item-text-wrap">
+                <h2>Committee plans town hall meetings to hear student views on residential life</h2>
+            </div>
+        </a>
 
-	<div class="card">
-		<a ng-controller="SportsController">
-		
-			<div class="item item-divider header--purple">
-				Food and Dining
-			</div>
-			<div class="item item-text-wrap">
-				This is a basic Card which contains an item that has wrapping text.
-			</div>
-		</a>
-	</div>
+        <a class="item item-thumbnail-left" id="article"
+           href="http://dailynorthwestern.com/2016/09/22/campus/student-groups-will-not-leave-norris-before-fall-2018-admin-says/">
+            <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/NORRIS_JEFFREYWANG_WEB-900x600.jpg">
+            <div class="item item-text-wrap">
+                <h2>Student groups will not leave Norris before fall 2018, admin says</h2>
+            </div>
+        </a>
 
-	<div class="card">
-		<a ng-controller="UpcomingController">
-			<div class="item item-divider header--purple">
-				Upcoming
-			</div>
-			<div class="item item-text-wrap">
-				This is a basic Card which contains an item that has wrapping text.
-			</div>
-		</a>
-	</div>
+        <a class="item item-thumbnail-left" id="article"
+           href="http://dailynorthwestern.com/2016/09/22/campus/black-student-experience-task-force-members-hope-report-will-result-in-actual-change/">
+            <img src="http://dailynorthwestern.com/wp-content/uploads/2016/09/7-WEB-900x600.jpg">
+            <div class="item item-text-wrap">
+                <h2>Black Student Experience task force members hope report will result in actual change</h2>
+            </div>
+        </a>
+    </div>
+
+    <div class="card" ng-controller="SportsController">
+        <div class="item item-divider header--purple">
+            Sports
+        </div>
+        <div class="item item-text-wrap">
+            This is a basic Card which contains an item that has wrapping text.
+        </div>
+    </div>
+
+    <div class="card" ng-controller="FoodController">
+        <div class="item item-divider header--purple">
+            Food and Dining
+        </div>
+        <div class="item item-text-wrap">
+            This is a basic Card which contains an item that has wrapping text.
+        </div>
+    </div>
+
+    <div class="card" ng-controller="UpcomingController">
+        <div class="item item-divider header--purple">
+            Upcoming
+        </div>
+        <div class="item item-text-wrap">
+            This is a basic Card which contains an item that has wrapping text.
+        </div>
+    </div>
 
 </div>
