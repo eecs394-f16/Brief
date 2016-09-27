@@ -31,5 +31,5 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"img":"eng.png"
 		}
 	}
-	]
+	];
 }]);
