@@ -46,23 +46,25 @@
 						 
 		</div>	
 		
-        <div class="item item-thumbnail-left text-wrap" style="background-image: url(http://www.spgenergy.com/blog/wp-content/uploads/2016/02/Soccer-Ball-and-Field.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="item item-thumbnail-left item-text-wrap" style="background-image: url(http://www.spgenergy.com/blog/wp-content/uploads/2016/02/Soccer-Ball-and-Field.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
             <img src="https://cdn.shopify.com/s/files/1/0578/6941/t/1/assets/university-of-maryland.png?17867233466543276963">
-            <h2 style="color:white;">Northwestern vs. Maryland</h2>
-			<p> Men's Soccer </p>
-			<p> Lakeview Field, Evanston </p>
-			
-						 
+            <h1 style="color:white;">Maryland</h1>
+			<h2 style="color:white;"> Men's Soccer</h2>
+			<p style="color:white;"> Lakeview Field </p>
+									 
 		</div>
     </div>
 
-    <div class="card" ng-controller="UpcomingController">
-        <div class="item item-divider header--purple">
-            Upcoming
-        </div>
-        <div class="item item-text-wrap">
-            This is a basic Card which contains an item that has wrapping text.
-        </div>
-    </div>
+ <div class="list card" ng-controller="UpcomingController">
+     <div class="item item-divider header--purple">
+         Upcoming
+     </div>
+
+     <div ng-repeat="event in upcoming" class="item item-thumbnail-left item-text-wrap">
+         <img ng-src="{{event.data.img}}">
+             <h2 style>{{event.data.name}}</h2>
+			 
+     </div>
+ </div>
 
 </div>

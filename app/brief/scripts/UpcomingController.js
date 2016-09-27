@@ -13,7 +13,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 		"type": 1,
 		"data":{
 			"name":"Last day to drop classes",
-			"time":null,
+			"time":"11:59pm",
 			"date": "10/25",
 			"img":"drop.png"
 		}
