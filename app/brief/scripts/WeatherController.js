@@ -7,5 +7,4 @@ angular.module('brief').controller('WeatherController', ['$scope', function($sco
         "sky": "sunny"
     }
 
-
 }]);

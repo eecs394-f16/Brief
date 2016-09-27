@@ -12,7 +12,7 @@ angular.module('brief').controller('NewsController', ['$scope', function($scope,
             "type": 4,
             "data":{
                 "name":"University hires architectural firm to begin planning Black House renovations",
-                "img":"",
+                "img":"http://dailynorthwestern.com/wp-content/uploads/2016/09/1-WEB-900x600-1-900x600.jpg",
                 "link": "http://dailynorthwestern.com/2016/09/22/campus/university-hires-architectural-firm-to-begin-planning-black-house-renovations/"
             }
         }
