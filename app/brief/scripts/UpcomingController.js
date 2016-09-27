@@ -6,7 +6,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"name":"ASG applications due",
 			"time":"11:59pm",
 			"date": "10/4",
-			"img":"ASG.png"
+			"img":"/data/asg.png"
 		}
 	},
 	{
@@ -15,19 +15,17 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"name":"Last day to drop classes",
 			"time":"11:59pm",
 			"date": "10/25",
-			"img":"drop.png"
+			"img":"/data/drop.png"
 		}
 	},
 	{
 		"type": 2,
 		"data":{
 			"name":"McCormick job fair",
-			"timeStart":"4:00pm",
-			"timeEnd": "7:00pm",
-			"dateStart": "10/2",
-			"dateEnd": null,
+			"time":"4:00pm-7:00pm",
+			"date": "10/2",
 			"location": "Tech",
-			"img":"eng.png"
+			"img":"/data/Eng.png"
 		}
 	}
 	];

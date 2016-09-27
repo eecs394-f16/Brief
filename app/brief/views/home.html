@@ -62,7 +62,11 @@
 
      <div ng-repeat="event in upcoming" class="item item-thumbnail-left item-text-wrap">
          <img ng-src="{{event.data.img}}">
-             <h2 style>{{event.data.name}}</h2>
+             <h2>{{event.data.name}}</h2>
+			 <h3> {{event.data.date}} at {{event.data.time}} </h3>
+			 <h3> {{event.data.location}} </h3>
+			 
+			 
 			 
      </div>
  </div>
