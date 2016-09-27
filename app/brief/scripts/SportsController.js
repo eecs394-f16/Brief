@@ -1,5 +1,5 @@
 angular.module('brief').controller('SportsController', ['$scope', function($scope) {
-    $scope.sports= [
+    $scope.sports = [
     	{
 			"type": 0,
 			"data":{

@@ -1,6 +1,5 @@
 angular.module('brief').controller('UpcomingController', ['$scope', function($scope) {
-	$scope.upcoming =
-	[
+	$scope.upcoming = [
 	{
 		"type": 1,
 		"data":{
@@ -9,7 +8,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"date": "10/4",
 			"img":"ASG.png"
 		}
-	}
+	},
 	{
 		"type": 1,
 		"data":{
@@ -18,7 +17,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"date": "10/25",
 			"img":"drop.png"
 		}
-	}
+	},
 	{
 		"type": 2,
 		"data":{
