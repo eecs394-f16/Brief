@@ -1,6 +1,18 @@
 <div class="padding">
-
+    <script>
+        function openView(link){
+            var view = new supersonic.ui.View(link);
+            supersonic.ui.layers.push(view);
+        }
+        function closeView(){
+            supersonic.ui.layers.popAll();
+        
+        }
+    </script>
     <super-navbar>
+        <super-navbar-button style="display:none" ng-click="closeView()">
+            Back
+        </super-navbar-button>
         <super-navbar-title>
             Today, September 22
         </super-navbar-title>
@@ -18,16 +30,17 @@
         </div>
     </div>
 
-    <div class="list card" ng-controller="NewsController">
+    <div class="list card" ng-controller="NewsController" >
         <div class="item item-divider header--purple">
             News
         </div>
 
-        <a ng-repeat="article in news" class="item item-thumbnail-left item-text-wrap"
-           ng-href="{{article.data.link}}">
+        <div ng-repeat="article in news" class="item item-thumbnail-left item-text-wrap"
+            >
             <img ng-src="{{article.data.img}}">
+            <button onclick="openView('{{article.data.link}}')"> Link </button>
                 <h2>{{article.data.name}}</h2>
-        </a>
+        </div>
     </div>
 
     <div class="card" ng-controller="SportsController">
