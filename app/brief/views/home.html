@@ -1,9 +1,5 @@
 <div class="padding">
     <script>
-        function openView(link){
-            var view = new supersonic.ui.View(link);
-            supersonic.ui.layers.push(view);
-        }
         function closeView(){
             supersonic.ui.layers.popAll();
         
@@ -30,15 +26,14 @@
         </div>
     </div>
 
+
     <div class="list card" ng-controller="NewsController" >
         <div class="item item-divider header--purple">
             News
         </div>
 
-        <div ng-repeat="article in news" class="item item-thumbnail-left item-text-wrap"
-            >
+        <div ng-click="openView()" ng-repeat="article in news" class="item item-thumbnail-left item-text-wrap">
             <img ng-src="{{article.data.img}}">
-            <button onclick="openView('{{article.data.link}}')"> Link </button>
                 <h2>{{article.data.name}}</h2>
         </div>
     </div>

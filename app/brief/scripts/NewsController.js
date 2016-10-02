@@ -1,4 +1,4 @@
-angular.module('brief').controller('NewsController', ['$scope', function($scope, $http) {
+angular.module('brief').controller('NewsController', ['$scope', function($scope, supersonic) {
     $scope.news = [
         {
             "type": 4,
@@ -25,5 +25,10 @@ angular.module('brief').controller('NewsController', ['$scope', function($scope,
             }
         }
     ];
+
+    $scope.openView = function() {
+        var view = new supersonic.ui.View({location: "http://google.com"});
+        supersonic.ui.layers.push(view);
+    };
 
 }]);
