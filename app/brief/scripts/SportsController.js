@@ -6,7 +6,7 @@ angular.module('brief').controller('SportsController', ['$scope', function($scop
 				"name":"Nebraska",
 				"sport": "Soccer",
 				"time":"7:00pm",
-				"date":"9/30",
+				"date":"10/3",
 				"location":"Lakeside Field",
 				"img":"nebraska.png"
 			}
@@ -16,7 +16,7 @@ angular.module('brief').controller('SportsController', ['$scope', function($scop
 			"data":{
 				"name":"University of Illinois",
 				"sport": "Basketball",
-				"date":"9/20",
+				"date":"10/1",
 				"score": {"NU":35, "OPP": 21},
 				"img":"UofI.png"
 			}
