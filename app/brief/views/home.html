@@ -6,9 +6,11 @@
         }
     </script>
     <super-navbar>
+        <!--
         <super-navbar-button style="display:none" ng-click="closeView()">
             Back
         </super-navbar-button>
+        -->
         <super-navbar-title>
             Today, September 22
         </super-navbar-title>
@@ -59,19 +61,20 @@
             <h1 style="color:white;">Maryland</h1>
 			<h2 style="color:white;"> Men's Soccer</h2>
 			<p style="color:white;"> Lakeview Field </p>
+            <p style="color:white;">9:30pm</p>
 									 
 		</div>
     </div>
 
  <div class="list card" ng-controller="UpcomingController">
      <div class="item item-divider header--purple">
-         Upcoming
+         Events
      </div>
 
      <div ng-repeat="event in upcoming" class="item item-thumbnail-left item-text-wrap">
          <img ng-src="{{event.data.img}}">
              <h2>{{event.data.name}}</h2>
-			 <h3> {{event.data.date}} at {{event.data.time}} </h3>
+			 <h3> {{event.data.time}} </h3>
 			 <h3> {{event.data.location}} </h3>
 			 
 			 
