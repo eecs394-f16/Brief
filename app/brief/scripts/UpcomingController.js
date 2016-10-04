@@ -18,7 +18,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"time":"5:30pm-7:30pm",
 			"date": "10/3",
 			"location": "The Garage",
-			"img":"/data/Eng.png"
+			"img":"/data/Garage.png"
 		}
 	}
 	,{
@@ -28,7 +28,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"time":"6:30pm-8:00pm",
 			"date": "10/3",
 			"location": "Shanley Pavillion",
-			"img":"/data/Eng.png"
+			"img":"/data/Earnest.png"
 		}
 	}
 	,{
@@ -38,7 +38,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"time":"7:30pm-9:30pm",
 			"date": "10/3",
 			"location": "Tech Auditorium",
-			"img":"/data/Eng.png"
+			"img":"/data/NCE.png"
 		}
 	}
 	,{
@@ -48,7 +48,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', function($sc
 			"time":"8:00pm-10:00pm",
 			"date": "10/3",
 			"location": "Cahn Auditorium",
-			"img":"/data/Eng.png"
+			"img":"/data/Eric.png"
 		}
 	}
 	
