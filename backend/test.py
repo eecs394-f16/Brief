@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import jsonify
 import requests
+import feedparser
 
 app = Flask(__name__)
 
@@ -10,6 +11,23 @@ def weather():
     result = r.json()
 
     return jsonify({"main":result["main"],"weather":result["weather"]})
+
+@app.route("/news")
+def news():
+    d = feedparser.parse('http://dailynorthwestern.com/feed/')
+    entries = []
+    count = 0
+    for entry in d.entries:
+        entries.append({
+            "title":entry.title,
+            "link":entry.link,
+            "description":entry.description,
+            "published":entry.published
+        })
+        if count == 5:
+            break
+        count += 1
+    return jsonify(entries)
 
 if __name__ == "__main__":
     app.run()

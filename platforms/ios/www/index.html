@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
@@ -31,39 +31,48 @@
     <script src="js/SportsController.js"></script>
     <script src="js/WeatherController.js"></script>
     <script src="js/UpcomingController.js"></script>
-  </head>
-  <body ng-app="brief" class="platform-ios platform-cordova platform-webview">
-    <ion-pane ng-controller="indexController">
-        <ion-header-bar class="bar-royal">
-            <h1 class="title">{{ today }}</h1>
-        </ion-header-bar>
-        <ion-content>
-          <div ng-controller="WeatherController" id="weather">
+</head>
+<body ng-app="brief" class="platform-ios platform-cordova platform-webview">
+<ion-pane ng-controller="indexController">
+    <ion-header-bar class="bar-royal">
+        <h1 class="title">{{ today }}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-controller="WeatherController" id="weather">
             <div class="row">
-              <div class="col">
-                <h1 style="font-size:100px;">{{ weather.temp }}&deg;</h1>
-              </div>
-              <div class="col">
-                <p><strong>High:</strong> {{ weather.high }}&deg;</p>
-                <p><strong>Low:</strong> {{ weather.low }}&deg;</p>
-                <p><strong>Humidity:</strong> {{ weather.humidity }}</p>
-              </div>
+                <div class="col">
+                    <h1 style="font-size:100px;">{{ weather.temp }}&deg;</h1>
+                </div>
+                <div class="col">
+                    <p><strong>High:</strong> {{ weather.high }}&deg;</p>
+                    <p><strong>Low:</strong> {{ weather.low }}&deg;</p>
+                    <p><strong>Humidity:</strong> {{ weather.humidity }}</p>
+                </div>
             </div>
-          </div>
+        </div>
 
-            <div ng-controller="NewsController" class="card list">
-              <div class="item item-divider card-header">
+        <div ng-controller="NewsController" class="card list">
+            <div class="item item-divider card-header">
                 News
-              </div>
-              <a ng-repeat="article in news" class="item item-thumbnail-left" ng-click="openLink(article.data.link)">
-                <img ng-src="{{article.data.img}}">
-                <h2 class="news-headline">{{article.data.name}}</h2>
-              </a>
-
-
             </div>
+            <a ng-repeat="article in news" class="item" ng-click="openLink(article.data.link)">
+                <h2 class="news-headline">{{article.data.name}}</h2>
+            </a>
+        </div>
 
-      </ion-content>
-    </ion-pane>
-  </body>
+        <div ng-controller="UpcomingController" class="card list">
+            <div class="item item-divider card-header">
+                News
+            </div>
+            <a ng-repeat="event in upcoming" class="item item-thumbnail-left" ng-click="openLink(article.data.link)">
+                <img ng-src="{{event.data.img}}">
+                <h2>{{event.data.name}}</h2>
+                <h3> {{event.data.time}} </h3>
+                <h3> {{event.data.location}} </h3>
+            </a>
+        </div>
+
+    </ion-content>
+</ion-pane>
+</body>
 </html>

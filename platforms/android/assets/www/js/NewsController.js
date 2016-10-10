@@ -1,4 +1,4 @@
-angular.module('brief').controller('NewsController', ['$scope', function($scope, supersonic) {
+angular.module('brief').controller('NewsController', ['$scope', function($scope) {
   $scope.news = [
     {
       "type": 4,
@@ -27,7 +27,8 @@ angular.module('brief').controller('NewsController', ['$scope', function($scope,
   ];
 
   $scope.openLink = function() {
-    window.open("https://google.com", '_blank', 'location=no');
+
+    window.open('http://google.com','_blank');
   }
 
 }]);
