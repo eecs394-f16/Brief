@@ -30,28 +30,24 @@ angular.module('brief').controller('indexController', ['$scope', function($scope
 angular.module('brief').controller('NewsController', ['$scope', function($scope) {
   $scope.news = [
     {
-      "type": 4,
-      "data":{
-        "name":"NU Dining implements new late-night locations, changes to dining hall options",
-        "img":"http://dailynorthwestern.com/wp-content/uploads/2016/09/DINING_LaurenDuquette_WEB-900x600.jpg",
-        "link": "http://dailynorthwestern.com/2016/09/30/campus/nu-dining-implements-new-late-night-locations-changes-to-dining-hall-options/"
-      }
+        "title":"NU Dining implements new late-night locations, changes to dining hall options",
+        "link": "http://dailynorthwestern.com/2016/09/30/campus/nu-dining-implements-new-late-night-locations-changes-to-dining-hall-options/",
+		"published": "Tue, 11 Oct 2016 01:43:46 +0000",
+		"description": "Women&#8217;s Tennis Northwestern’s regular season doesn’t begin until winter, but the doubles duo of juniors Alex Chatt and Maddie Lipp looks ready to go today. At the ITA All-American Championships, Chatt and Lipp made the semifinals of the main doubles draw, where they fell Saturday in a tiebreak against North Carolina’s Haley Carter and Jessie [&#8230;]"
     },
     {
-      "type": 4,
-      "data":{
-        "name":"Wyatt: Non-black students can easily improve Blowout atmosphere by omitting the N-word",
-        "img":"http://dailynorthwestern.com/wp-content/uploads/2016/09/AO_YoungThug_WEB-1-900x600.jpg",
-        "link": "http://dailynorthwestern.com/2016/09/29/opinion/non-black-students-can-easily-improve-blowout-atmosphere-by-omitting-the-n-word/"
-      }
+        "title":"Wyatt: Non-black students can easily improve Blowout atmosphere by omitting the N-word",
+        "link": "http://dailynorthwestern.com/2016/09/29/opinion/non-black-students-can-easily-improve-blowout-atmosphere-by-omitting-the-n-word/",
+		"published": "Tue, 11 Oct 2016 01:43:46 +0000",
+		"description": "Women&#8217;s Tennis Northwestern’s regular season doesn’t begin until winter, but the doubles duo of juniors Alex Chatt and Maddie Lipp looks ready to go today. At the ITA All-American Championships, Chatt and Lipp made the semifinals of the main doubles draw, where they fell Saturday in a tiebreak against North Carolina’s Haley Carter and Jessie [&#8230;]"
+		
+      
     },
     {
-      "type": 4,
-      "data":{
-        "name":"Northwestern student Chuyuan Qiu remembered for sense of wonder, playful humor",
-        "img":"http://dailynorthwestern.com/wp-content/uploads/2016/09/CHU_YunQi_WEB-600x900.jpg",
-        "link": "http://dailynorthwestern.com/2016/09/29/campus/northwestern-student-chuyuan-qiu-remembered-for-sense-of-wonder-playful-humor/"
-      }
+        "title":"Northwestern student Chuyuan Qiu remembered for sense of wonder, playful humor",
+        "link": "http://dailynorthwestern.com/2016/09/29/campus/northwestern-student-chuyuan-qiu-remembered-for-sense-of-wonder-playful-humor/",
+		"published": "Tue, 11 Oct 2016 01:43:46 +0000",
+		"description": "Women&#8217;s Tennis Northwestern’s regular season doesn’t begin until winter, but the doubles duo of juniors Alex Chatt and Maddie Lipp looks ready to go today. At the ITA All-American Championships, Chatt and Lipp made the semifinals of the main doubles draw, where they fell Saturday in a tiebreak against North Carolina’s Haley Carter and Jessie [&#8230;]"
     }
   ];
 

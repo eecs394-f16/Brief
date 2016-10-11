@@ -53,8 +53,8 @@
             <div class="item item-divider card-header">
                 News
             </div>
-            <a ng-repeat="article in news" class="item" ng-click="openLink(article.data.link)">
-                <h2 class="news-headline">{{article.data.name}}</h2>
+            <a ng-repeat="article in news" class="item" ng-click="openLink(article.link)">
+                <h2 class="news-headline">{{article.title}}</h2>
             </a>
         </div>
 
