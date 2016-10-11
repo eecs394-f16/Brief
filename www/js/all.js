@@ -20,6 +20,7 @@ angular.module('brief', ['ionic'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
+
   });
 })
 
@@ -170,3 +171,4 @@ angular.module('brief').controller('WeatherController', ['$scope', function($sco
 }
 
 }]);
+
