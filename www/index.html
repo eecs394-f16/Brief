@@ -36,15 +36,16 @@
 
         <!-- Weather Card -->
         <div ng-controller="WeatherController" id="weather" >
-            
-            <div class="row"  >
-                <div class="col">
-                    <h1 style="font-size:100px;">{{ weather.main.temp }}&deg;</h1>
-                </div>
-                <div class="col">
-                    <p><strong>High:</strong> {{ weather.main.temp_max }}&deg;</p>
-                    <p><strong>Low:</strong> {{ weather.main.temp_min }}&deg;</p>
-                    <p><strong>Humidity:</strong> {{ weather.main.humidity }}</p>
+            <div ng-class="cla">
+                <div class="row"  >
+                    <div class="col">
+                        <h1 style="font-size:100px;">{{ weather.main.temp }}&deg;</h1>
+                    </div>
+                    <div class="col">
+                        <p><strong>High:</strong> {{ weather.main.temp_max }}&deg;</p>
+                        <p><strong>Low:</strong> {{ weather.main.temp_min }}&deg;</p>
+                        <p><strong>Humidity:</strong> {{ weather.main.humidity }}</p>
+                    </div>
                 </div>
             </div>
         </div>
