@@ -18,6 +18,6 @@ angular.module('brief').controller('WeatherController', ['$scope', function($sco
     }
   ]
 }
-	$scope.cla = "Clouds";
+	$scope.class = "clouds-bg";
 
 }]);

@@ -14,8 +14,8 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-$royal: #836CAC !default;
-$calm: #836CAC !default;
+$royal: #401F68 !default;
+$calm: #4E2A84 !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -29,23 +29,43 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 #weather {
-  background: $royal;
-  min-height: 100px;
-  color: #fff;
-  padding: 0px 20px;
+  background: #ababab;
+  min-height: 150px;
+  color: $royal;
+  padding: 0 10px;
+  font-size: 25px;
 
-  h1 {
-    color: #fff;
+  .temperature {
+    font-size: 100px;
+    color: $royal;
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    margin-top: 40px;
+  }
+
+  .high-low {
+    margin-top: 40px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+  }
+
+  .humidity {
+      font-size: 15px;
+  }
+
+  .center {
+      text-align: center;
+  }
+
+  .lighter {
+      background: #c9c9c9;
+      width: 70%;
+      display: inline-block;
+      margin: 15px 0px 10px 0px;
+      padding: 10px 0px 5px 0px;
   }
 }
 
 .item h2.news-headline {
   white-space: normal;
-}
-
-.Clouds{
-  background: url(../img/Clouds.jpg);
-}
-.Sun{
-  background: url(../img/Sun.jpg);
 }

@@ -6,6 +6,7 @@
     <title></title>
 
     <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700,900|Scope+One" rel="stylesheet">
 
     <!-- un-comment this code to enable service worker
     <script>
@@ -29,22 +30,20 @@
 </head>
 <body ng-app="brief">
 <ion-pane ng-controller="indexController">
-    <ion-header-bar class="bar-royal">
+    <ion-header-bar class="bar-calm">
         <h1 class="title">{{ today }}</h1>
     </ion-header-bar>
     <ion-content>
 
         <!-- Weather Card -->
-        <div ng-controller="WeatherController" id="weather" >
-            <div ng-class="cla">
-                <div class="row"  >
-                    <div class="col">
-                        <h1 style="font-size:100px;">{{ weather.main.temp }}&deg;</h1>
-                    </div>
-                    <div class="col">
-                        <p><strong>High:</strong> {{ weather.main.temp_max }}&deg;</p>
-                        <p><strong>Low:</strong> {{ weather.main.temp_min }}&deg;</p>
-                        <p><strong>Humidity:</strong> {{ weather.main.humidity }}</p>
+        <div ng-controller="WeatherController" id="weather" ng-class="class">
+            <div class="row">
+                <div class="col center">
+                    <p class="temperature">&nbsp;{{ weather.main.temp || 44 }}&deg;</p>
+                    <p class="high-low">&nbsp;{{ weather.main.temp_max }}&deg; | {{ weather.main.temp_min }}&deg;</p>
+                    <div class="lighter">
+                        <p>clear sky</p>
+                        <p class="humidity"><strong>Humidity:</strong> {{ weather.main.humidity }}%</p>
                     </div>
                 </div>
             </div>
