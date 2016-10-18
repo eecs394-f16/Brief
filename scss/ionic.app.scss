@@ -23,9 +23,17 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+body {
+    font-family: 'roboto', serif;
+}
+
 .card-header {
   background: $calm;
   color: #fff;
+  font-size: 30px;
+  height: 45px;
+  padding: 10px 15px;
+  font-weight: 100;
 }
 
 #weather {
@@ -68,4 +76,5 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 .item h2.news-headline {
   white-space: normal;
+  font-family: 'Scope One', sans-serif;
 }

@@ -9815,9 +9815,16 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+body {
+  font-family: 'roboto', serif; }
+
 .card-header {
   background: #4E2A84;
-  color: #fff; }
+  color: #fff;
+  font-size: 30px;
+  height: 45px;
+  padding: 10px 15px;
+  font-weight: 100; }
 
 #weather {
   background: #ababab;
@@ -9847,4 +9854,5 @@ a.button {
     padding: 10px 0px 5px 0px; }
 
 .item h2.news-headline {
-  white-space: normal; }
+  white-space: normal;
+  font-family: 'Scope One', sans-serif; }
