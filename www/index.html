@@ -6,7 +6,7 @@
     <title></title>
 
     <link rel="manifest" href="manifest.json">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700,900|Scope+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C500%2C700%2C900%7CScope%20One" rel="stylesheet">
 
     <!-- un-comment this code to enable service worker
     <script>
@@ -54,7 +54,7 @@
             <div class="item item-divider card-header">
                 News
             </div>
-            <a ng-repeat="article in news" class="item" ng-click="openLink(article.link)">
+            <a ng-repeat="article in list" class="item" ng-click="openLink(article.link)">
                 <h2 class="news-headline">{{article.title}}</h2>
             </a>
         </div>
@@ -64,10 +64,11 @@
             <div class="item item-divider card-header">
                 Upcoming Events
             </div>
-            <a ng-repeat="event in upcoming" class="item" ng-click="openLink(article.data.link)">
-                <h2>{{event.data.name}}</h2>
-                <h3>{{event.data.time}}</h3>
-                <h3>{{event.data.location}}</h3>
+            <a ng-repeat="event in listUp" class="item" ng-click="openLink(event.url)">
+                <h2 class= "upcoming-title">{{event.title}}</h2>
+                <h3 class="upcoming-type">{{event.category}} </h3>
+                <h3>{{event.time}} at {{event.location}}</h3>
+                
             </a>
         </div>
 
