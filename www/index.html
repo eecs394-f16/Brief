@@ -42,7 +42,7 @@
                     <p class="temperature">&nbsp;{{ weather.data.main.temp || 44 }}&deg;</p>
                     <p class="high-low">&nbsp;{{ weather.data.main.temp_max }}&deg; | {{ weather.data.main.temp_min }}&deg;</p>
                     <div class="lighter">
-                        <p>clear sky</p>
+                        <p>{{weather.data.weather[0].description}}</p>
                         <p class="humidity"><strong>Humidity:</strong> {{ weather.data.main.humidity }}%</p>
                     </div>
                 </div>
