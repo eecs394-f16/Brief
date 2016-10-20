@@ -39,11 +39,11 @@
         <div ng-controller="WeatherController" id="weather" ng-class="class">
             <div class="row">
                 <div class="col center">
-                    <p class="temperature">&nbsp;{{ weather.main.temp || 44 }}&deg;</p>
-                    <p class="high-low">&nbsp;{{ weather.main.temp_max }}&deg; | {{ weather.main.temp_min }}&deg;</p>
+                    <p class="temperature">&nbsp;{{ weather.data.main.temp || 44 }}&deg;</p>
+                    <p class="high-low">&nbsp;{{ weather.data.main.temp_max }}&deg; | {{ weather.data.main.temp_min }}&deg;</p>
                     <div class="lighter">
                         <p>clear sky</p>
-                        <p class="humidity"><strong>Humidity:</strong> {{ weather.main.humidity }}%</p>
+                        <p class="humidity"><strong>Humidity:</strong> {{ weather.data.main.humidity }}%</p>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <div class="item item-divider card-header">
                 Upcoming Events
             </div>
-            <a ng-repeat="event in listUp" class="item" ng-click="openLink(event.url)">
+            <a ng-repeat="event in list_upcoming" class="item" ng-click="openLink(event.url)">
                 <h2 class= "upcoming-title">{{event.title}}</h2>
                 <h3 class="upcoming-type">{{event.category}} </h3>
                 <h3>{{event.time}} at {{event.location}}</h3>

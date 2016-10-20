@@ -27,30 +27,21 @@ angular.module('brief').controller('indexController', ['$scope', function($scope
   $scope.today = "October 8, 2016";
 }]);
 
-angular.module('brief').controller('NewsController', ['$scope', function($scope) {
-  $scope.news = [
-    {
+angular.module('brief').controller('NewsController', ['$scope', '$http', function($scope, $http) {
+ 	$scope.news = {};
+ 
+	$http({
+		method: 'GET',
+		url: 'http://brief-backend.herokuapp.com/news'
+	}).then(function(response){
+		$scope.news = response;
+		$scope.list= $scope.news.data.entries;
+			
+	});
 
-        "title":"NU Dining implements new late-night locations, changes to dining hall options",
-        "img":"http://dailynorthwestern.com/wp-content/uploads/2016/09/DINING_LaurenDuquette_WEB-900x600.jpg",
-        "link": "http://dailynorthwestern.com/2016/09/30/campus/nu-dining-implements-new-late-night-locations-changes-to-dining-hall-options/"
-    },
-    {
-        "title":"Wyatt: Non-black students can easily improve Blowout atmosphere by omitting the N-word",
-        "img":"http://dailynorthwestern.com/wp-content/uploads/2016/09/AO_YoungThug_WEB-1-900x600.jpg",
-        "link": "http://dailynorthwestern.com/2016/09/29/opinion/non-black-students-can-easily-improve-blowout-atmosphere-by-omitting-the-n-word/"
-    },
-    {
-
-        "title":"Northwestern student Chuyuan Qiu remembered for sense of wonder, playful humor",
-        "img":"http://dailynorthwestern.com/wp-content/uploads/2016/09/CHU_YunQi_WEB-600x900.jpg",
-        "link": "http://dailynorthwestern.com/2016/09/29/campus/northwestern-student-chuyuan-qiu-remembered-for-sense-of-wonder-playful-humor/"
-    }
-  ];
-
-  $scope.openLink = function(url) {
-    window.open(url, '_blank');
-  }
+	$scope.openLink = function(url) {
+	window.open(url, '_blank');
+	}
 
 }]);
 
@@ -88,83 +79,34 @@ angular.module('brief').controller('SportsController', ['$scope', function($scop
 		}
     ];
 }]);
-angular.module('brief').controller('UpcomingController', ['$scope', function($scope) {
-	$scope.upcoming = [
+angular.module('brief').controller('UpcomingController', ['$scope', '$http', function($scope, $http) {
+	$scope.upcoming = {};
 	
-	{
-		"type": 2,
-		"data":{
-			"name":"McCormick job fair",
-			"time":"4:00pm-7:00pm",
-			"date": "10/3",
-			"location": "Tech",
-			"img":"/data/Eng.png"
-		}
-	}
-	,{
-		"type": 2,
-		"data":{
-			"name":"Building a Better Tomorrow",
-			"time":"5:30pm-7:30pm",
-			"date": "10/3",
-			"location": "The Garage",
-			"img":"/data/Garage.png"
-		}
-	}
-	,{
-		"type": 2,
-		"data":{
-			"name":"The Importance of Being Ernest",
-			"time":"6:30pm-8:00pm",
-			"date": "10/3",
-			"location": "Shanley Pavillion",
-			"img":"/data/Earnest.png"
-		}
-	}
-	,{
-		"type": 2,
-		"data":{
-			"name":"NCE Concert",
-			"time":"7:30pm-9:30pm",
-			"date": "10/3",
-			"location": "Tech Auditorium",
-			"img":"/data/NCE.png"
-		}
-	}
-	,{
-		"type": 2,
-		"data":{
-			"name":"Eric Whitacre - Orchestral Conducting",
-			"time":"8:00pm-10:00pm",
-			"date": "10/3",
-			"location": "Cahn Auditorium",
-			"img":"/data/Eric.png"
-		}
-	}
+	$http({
+		method: 'GET',
+		url: 'http://brief-backend.herokuapp.com/events'
+	}).then(function(response){
+		$scope.upcoming = response;
+		$scope.list_upcoming= $scope.upcoming.data.entries;
+		
+		
+	});
 	
+	$scope.openLink = function(url) {
+	window.open(url, '_blank');
 	
-	];
+	}
 }]);
-angular.module('brief').controller('WeatherController', ['$scope', function($scope, $http) {
-    $scope.weather = {
-  "main": {
-    "grnd_level": 1015.23,
-    "humidity": 92,
-    "pressure": 1015.23,
-    "sea_level": 1037.61,
-    "temp": 63,
-    "temp_max": 65,
-    "temp_min": 59
-  },
-  "weather": [
-    {
-      "description": "broken clouds",
-      "icon": "04n",
-      "id": 803,
-      "main": "Clouds"
-    }
-  ]
-}
+angular.module('brief').controller('WeatherController', ['$scope', '$http', function($scope, $http) {
 	$scope.class = "clouds-bg";
-
+	
+	$http({
+		method: 'GET',
+		url: 'http://brief-backend.herokuapp.com/weather'
+	}).then(function(response){
+		$scope.weather = response;
+		console.log(response.data);
+		
+	});
 }]);
+
