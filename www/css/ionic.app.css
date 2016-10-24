@@ -9862,3 +9862,43 @@ body {
 
 .item h3.upcoming-type {
   color: #999999; }
+
+.box {
+  width: 10px;
+  height: 10px;
+  margin: 0px;
+  padding: 0px;
+  display: "inline"; }
+
+.Aca {
+  background-color: #FF0000; }
+
+.Fit {
+  background-color: #FF0000; }
+
+.Oth {
+  background-color: #FF0000; }
+
+.Rel {
+  background-color: "#FF0000"; }
+
+.Lec {
+  background-color: "#FF0000"; }
+
+.Ath {
+  background-color: "#FF0000"; }
+
+.Fine {
+  background-color: "#FF0000"; }
+
+.Soc {
+  background-color: "#FF0000"; }
+
+.Glo {
+  background-color: "#FF0000"; }
+
+.Tra {
+  background-color: "#FF0000"; }
+
+.Mul {
+  background-color: "#FF0000"; }
