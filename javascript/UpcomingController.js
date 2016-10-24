@@ -45,7 +45,7 @@ angular.module('brief').controller('UpcomingController', ['$scope', '$http', fun
 			case "Multicultural & Diversity":
 				event.color = "Mul"
 				break;
-				
+			$scope.list_upcoming[i] = event;
 			}
 		}
 			
