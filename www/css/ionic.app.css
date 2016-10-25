@@ -9837,7 +9837,8 @@ body {
     color: #401F68;
     font-family: 'roboto', sans-serif;
     font-weight: 100;
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-bottom: 40px; }
   #weather .high-low {
     margin-top: 40px;
     font-family: 'roboto', sans-serif;
@@ -9858,10 +9859,15 @@ body {
   font-family: 'Scope One', sans-serif; }
 
 .item h2.upcoming-title {
-  white-space: normal; }
+  white-space: normal;
+  font-family: 'Scope One', sans-serif; }
 
 .item h3.upcoming-type {
   color: #999999; }
+
+.item h3.upcoming-location {
+  font-weight: 301;
+  font-size: 13px; }
 
 .box {
   width: 10px;

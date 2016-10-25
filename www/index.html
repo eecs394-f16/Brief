@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col center">
                     <p class="temperature">&nbsp;{{ weather.data.main.temp || 44 }}&deg;</p>
-                    <p class="high-low">&nbsp;{{ weather.data.main.temp_max }}&deg; | {{ weather.data.main.temp_min }}&deg;</p>
+                    
                     <div class="lighter">
                         <p>{{weather.data.weather[0].description}}</p>
                         <p class="humidity"><strong>Humidity:</strong> {{ weather.data.main.humidity }}%</p>
@@ -67,7 +67,7 @@
             <a ng-repeat="event in list_upcoming" class="item" ng-click="openLink(event.url)">
                 <h2 class= "upcoming-title">{{event.title}}</h2>
                 <h3 class="upcoming-type"><div class=" box" ng-class="event.color"> </div>{{event.category}}</h3>
-                <h3>{{event.time}} at {{event.location}}</h3>
+                <h3 class= "upcoming-location">{{event.time}} at {{event.location}}</h3>
                 
             </a>
         </div>
