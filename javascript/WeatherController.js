@@ -6,7 +6,7 @@ angular.module('brief').controller('WeatherController', ['$scope', '$http', func
 		url: 'http://brief-backend.herokuapp.com/weather'
 	}).then(function(response){
 		$scope.weather = response;
-		console.log(response.data);
+		
 		
 	});
 }]);
