@@ -9866,7 +9866,10 @@ body {
 .box {
   width: 10px;
   height: 10px;
-  margin: 0px;
+  margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 2px;
   padding: 0px;
   display: inline-block; }
 
@@ -9880,25 +9883,25 @@ body {
   background-color: #FF0000; }
 
 .Rel {
-  background-color: "#FF0000"; }
+  background-color: #FF0000; }
 
 .Lec {
-  background-color: "#FF0000"; }
+  background-color: #FF0000; }
 
 .Ath {
-  background-color: "#FF0000"; }
+  background-color: #FF0000; }
 
 .Fine {
-  background-color: "#FF0000"; }
+  background-color: #FF0000; }
 
 .Soc {
-  background-color: "#FF0000"; }
+  background-color: #FF0000; }
 
 .Glo {
-  background-color: "#FF0000"; }
+  background-color: #FF0000; }
 
 .Tra {
-  background-color: "#FF0000"; }
+  background-color: #FF0000; }
 
 .Mul {
-  background-color: "#FF0000"; }
+  background-color: #FF0000; }

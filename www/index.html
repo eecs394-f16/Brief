@@ -66,8 +66,7 @@
             </div>
             <a ng-repeat="event in list_upcoming" class="item" ng-click="openLink(event.url)">
                 <h2 class= "upcoming-title">{{event.title}}</h2>
-                {{event}}
-                <h3 class="upcoming-type"><div class="{{event.color}} box"> </div> {{event.category}}</h3>
+                <h3 class="upcoming-type"><div class=" box" ng-class="event.color"> </div>{{event.category}}</h3>
                 <h3>{{event.time}} at {{event.location}}</h3>
                 
             </a>

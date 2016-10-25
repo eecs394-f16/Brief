@@ -8,51 +8,54 @@ angular.module('brief').controller('UpcomingController', ['$scope', '$http', fun
 		$scope.upcoming = response;
 		$scope.list_upcoming= $scope.upcoming.data.entries;
 		
-		var event;
-		for(var i=0;i<$scope.list_upcoming;i++){
-			event =$scope.list_upcoming[i];
-			switch (event.type){
+		var e;
+		for(var i=0;i<$scope.list_upcoming.length;i++){
+			e =$scope.list_upcoming[i];
+			
+			switch (e.category){
 			case "Academic":
-				event.color = "Aca"
+				e.color = "Aca";
 				break;
 			case "Fitness & Recreation":
-				event.color = "Fit"
+				e.color = "Fit";
 				break;
 			case "Other":
-				event.color = "Oth"
+				e.color = "Oth";
 				break;
 			case "Religious":
-				event.color = "Rel"
+				e.color = "Rel";
 				break;
 			case "Lectures & Meetings":
-				event.color = "Lec"
+				e.color = "Lec";
 				break;
 			case "Athletics":
-				event.color = "Ath"
+				e.color = "Ath";
 				break;
 			case "Fine Arts":
-				event.color = "Fine"
+				e.color = "Fine";
 				break;
 			case "Social":
-				event.color = "Soc"
+				e.color = "Soc";
 				break;
 			case "Global & Civil Engagement":
-				event.color = "Glo"
+				e.color = "Glo";
 				break;
 			case "Training":
-				event.color = "Tra"
+				e.color = "Tra";
 				break;
 			case "Multicultural & Diversity":
-				event.color = "Mul"
+				e.color = "Mul";
 				break;
-			$scope.list_upcoming[i] = event;
+			default:
+				e.color = "Nul";
+			$scope.list_upcoming[i] = e;
 			}
 		}
 			
 		
 		
 	});
-	
+	$scope.debug = function(print){console.log(print)}
 	$scope.openLink = function(url) {
 	window.open(url, '_blank');
 	
