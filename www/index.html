@@ -24,19 +24,18 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-
+    <script src="js/moment.js"></script>
     <!-- Build this using "gulp javascript" -->
     <script src="js/all.js"></script>
-    <script src="js/moment.js"></script>
 </head>
 <body ng-app="brief">
 <ion-pane ng-controller="indexController">
     <ion-header-bar class="bar-calm">
-        <h1 class="title" id="title">Brief</h1>
+        <h1 class="title" id="title">{{today}} </h1>
 
-        <script>
-            document.getElementById('title').innerHTML = moment().format('dddd, MMMM Do');
-        </script>
+        
+            
+        
     </ion-header-bar>
     <ion-content>
 

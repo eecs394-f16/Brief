@@ -26,7 +26,7 @@ angular.module('brief', ['ionic'])
 })
 
 angular.module('brief').controller('indexController', ['$scope', function($scope) {
-  $scope.today = "October 8, 2016";
+  $scope.today = moment().format('dddd, MMMM Do');
 }]);
 
 angular.module('brief').controller('NewsController', ['$scope', '$http', function($scope, $http) {
