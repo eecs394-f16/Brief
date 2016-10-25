@@ -9837,7 +9837,8 @@ body {
     color: #401F68;
     font-family: 'roboto', sans-serif;
     font-weight: 100;
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-bottom: 40px; }
   #weather .high-low {
     margin-top: 40px;
     font-family: 'roboto', sans-serif;
@@ -9858,7 +9859,55 @@ body {
   font-family: 'Scope One', sans-serif; }
 
 .item h2.upcoming-title {
-  white-space: normal; }
+  white-space: normal;
+  font-family: 'Scope One', sans-serif; }
 
 .item h3.upcoming-type {
   color: #999999; }
+
+.item h3.upcoming-location {
+  font-weight: 301;
+  font-size: 13px; }
+
+.box {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  padding: 0px;
+  display: inline-block; }
+
+.Aca {
+  background-color: #58B947; }
+
+.Fit {
+  background-color: #D85820; }
+
+.Oth {
+  background-color: #D9C826; }
+
+.Rel {
+  background-color: #007FA4; }
+
+.Lec {
+  background-color: #7FCECD; }
+
+.Ath {
+  background-color: #0D2D6C; }
+
+.Fine {
+  background-color: #5091CD; }
+
+.Soc {
+  background-color: #008656; }
+
+.Glo {
+  background-color: #EF553F; }
+
+.Tra {
+  background-color: #CA7C1B; }
+
+.Mul {
+  background-color: #FFC520; }
